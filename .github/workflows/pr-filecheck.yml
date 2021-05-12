@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
 
       - uses: technote-space/get-diff-action@v3
         id: git_diff_content
@@ -33,7 +33,7 @@ jobs:
           PREFIX_FILTER: files/
           ABSOLUTE: true
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
         if: steps.git_diff_content.outputs.diff
         with:
           repository: mdn/yari
