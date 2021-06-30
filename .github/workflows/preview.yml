@@ -19,7 +19,7 @@ jobs:
 
       - name: Setup Node.js environment
         if: env.MATCHED_FILES
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v2.2.0
         with:
           node-version: "12"
 
